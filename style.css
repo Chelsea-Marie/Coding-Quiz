@@ -1,0 +1,35 @@
+.page {
+    outline: 1px solid black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#start-page p {
+    width: 60%;
+}
+
+#question-box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#question-page button {
+    background-color: rgb(89, 43, 226);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    min-width: 100px;
+    width: auto;
+}
