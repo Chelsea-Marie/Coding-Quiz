@@ -11,11 +11,12 @@
 
 <div class="page" id="start-page">
     <h1>Coding Quiz Challenge</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis in, laboriosam culpa ab deserunt sequi sit distinctio! Illo labore enim possimus maxime magnam nisi laboriosam. Officia molestiae voluptate nulla.</p>
+    <p>You have 60 seconds to answer these coding questions! However, if you answer incorrectly, your time will decrease by 10 seconds. Good luck!</p>
     <button id="start-btn">Start Quiz</button>
 </div>   
 
 <div class="page hide" id="question-page">
+    <div id="timer"></div>
     <div id="question-box">
         <h2 id="question-text">Question text here</h2>
         <button id="option-1">Option 1</button>
@@ -24,17 +25,31 @@
         <button id="option-4">Option 4</button>
     </div>
     <hr/>
-    <p>Correct/Wrong</p>
+    <p id="result">Correct/Wrong</p>
 </div>
 
 <div class="page hide" id="end-page">
-    <h2>This is the end page</h2>
+    <h2>You finished the quiz!</h2>
+    <h3>Your final score: <span id="final-score"></span></h3>
+    <div>
+        <label>Enter your intials:</label>
+        <input id="initials-input" type="text"/>
+        <button id="submit-btn">Submit</button>
+    </div>
+    <hr/>
+    <button id="hs-btn">Go to highscores page</button>
 </div>
 
 <div class="page hide" id="highscore-page">
-
+    <h2>This is the high score page</h2>
+    <ul id="score-list">
+       
+    </ul>
 </div>
-
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
